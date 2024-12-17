@@ -1,7 +1,14 @@
 package cn.bugstack.domain.strategy.service.armory;
 
-public interface IStrategyArmory {
-    void assembleLotteryStrategy(Long strategyId);
+import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 
-    Integer getRandomAwardId(Long strategyId);
+import java.util.List;
+
+public interface IStrategyArmory {
+
+    public boolean assembleLotteryStrategy(Long strategyId);
+
+
+    public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities);
+
 }

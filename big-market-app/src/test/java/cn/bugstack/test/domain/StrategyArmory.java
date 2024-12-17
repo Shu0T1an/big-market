@@ -1,7 +1,9 @@
 package cn.bugstack.test.domain;
 
 import cn.bugstack.domain.strategy.service.armory.IStrategyArmory;
+import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,17 +17,23 @@ import javax.annotation.Resource;
 public class StrategyArmory {
     @Resource
     private IStrategyArmory strategyArmory;
-    @Test
+    @Resource
+    private  IStrategyDispatch strategyDispatch;
+    @Before
     public void test_startegyArmory() {
-        strategyArmory.assembleLotteryStrategy(100001L);
+        boolean success = strategyArmory.assembleLotteryStrategy(100001L);
+        log.info("测试结果：{}",success);
     }
 
     @Test
     public void test_getRandomAwardId() {
+        log.info("测试结果：{}", strategyDispatch.getRandomAwardId(100001L));
+    }
 
-        for (int i = 0; i  < 100;i++) {
-            log.info("测试结果：{}", strategyArmory.getRandomAwardId(100001L));
-        }
-
+    @Test
+    public void test_getRandomAwardId_ruleWeightValue() {
+        log.info("测试结果：{}", strategyDispatch.getRandomAwardId(100001L, "4000:102,103,104,105"));
+        log.info("测试结果：{}", strategyDispatch.getRandomAwardId(100001L, "5000:102,103,104,105,106"));
+        log.info("测试结果：{}", strategyDispatch.getRandomAwardId(100001L, "6000:102,103,104,105,106,107,108,109"));
     }
 }

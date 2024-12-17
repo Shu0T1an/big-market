@@ -1,6 +1,8 @@
 package cn.bugstack.domain.strategy.repository;
 
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
+import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
+import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 
 import java.util.List;
 import java.util.Map;
@@ -8,10 +10,16 @@ import java.util.Map;
 public interface IStrategyRepository {
     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
 
-    void storeStrategyAwardSearchRateTable(Long strategyId, Integer rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable);
+    void storeStrategyAwardSearchRateTable(String key, Integer rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable);
 
     int getRateRange(Long strategyId);
 
 
-    Integer getStrategyAwardAssemble(Long strategyId, int ratekey);
+    Integer getStrategyAwardAssemble(String key, int ratekey);
+
+    StrategyEntity queryStrategyEntityByStrategyId(Long strategyId);
+
+    StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleModel);
+
+    int getRateRange(String key);
 }
