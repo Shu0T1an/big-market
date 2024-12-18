@@ -22,4 +22,7 @@ public interface IStrategyRepository {
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleModel);
 
     int getRateRange(String key);
+
+    String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
+
 }
