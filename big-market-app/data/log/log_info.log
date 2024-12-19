@@ -2118,3 +2118,719 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 24-12-19.17:00:04.980 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":103}
 24-12-19.17:00:05.012 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-19.17:00:05.031 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:35:27.579 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 19420 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:35:27.581 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:35:28.890 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:35:28.894 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:35:28.929 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-12-19.21:35:31.404 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:35:32.600 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:35:32.618 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:35:34.677 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:35:34.764 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.675 seconds (JVM running for 8.75)
+24-12-19.21:35:35.364 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:35:35.805 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:35:35.871 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:35:35.872 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:35:35.872 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:35:35.872 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:35:35.876 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:35:35.992 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:35:36.014 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:35:36.014 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:35:36.014 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:35:36.015 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:35:36.015 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:35:36.021 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:35:36.022 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:35:36.022 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:35:36.022 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:35:36.022 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:35:36.022 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:35:36.032 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:35:36.032 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:35:36.032 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:35:36.032 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:35:36.032 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:35:36.036 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:35:36.072 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:35:36.072 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:35:36.080 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user111 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:35:36.168 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:35:36.183 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:36:03.877 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 22156 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:36:03.878 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:36:04.876 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:36:04.881 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:36:04.915 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-12-19.21:36:07.248 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:36:08.420 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:36:08.439 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:36:10.748 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:36:10.834 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.455 seconds (JVM running for 8.533)
+24-12-19.21:36:11.264 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:36:11.571 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:36:11.629 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:36:11.631 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:36:11.631 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:36:11.631 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:36:11.635 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:36:11.750 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:36:11.771 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:36:11.771 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:36:11.771 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:36:11.771 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:36:11.771 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:36:11.778 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:36:11.778 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:36:11.779 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:36:11.779 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:36:11.779 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:36:11.779 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:36:11.787 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:36:11.788 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:36:11.788 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:36:11.788 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:36:11.788 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:36:11.792 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:36:11.833 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:36:11.833 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:36:11.840 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user111 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:36:44.399 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:36:44.421 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:36:53.385 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 35020 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:36:53.386 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:36:54.484 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:36:54.487 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:36:54.521 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-12-19.21:36:57.083 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:36:58.270 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:36:58.290 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:37:00.517 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:37:00.611 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.802 seconds (JVM running for 9.01)
+24-12-19.21:37:01.083 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:37:01.404 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:37:01.466 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:01.467 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:37:01.468 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:37:01.468 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:37:01.472 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:01.586 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:01.611 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:01.611 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:37:01.612 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:37:01.612 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:37:01.612 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:01.619 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:01.619 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:01.620 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:37:01.620 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:37:01.620 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:37:01.620 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:01.627 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:01.627 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:01.627 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:37:01.628 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:37:01.628 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:37:01.630 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:01.666 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:01.667 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:37:01.676 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user111 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:37:01.712 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user111 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:37:01.934 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user111"}
+24-12-19.21:37:01.937 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":103}
+24-12-19.21:37:01.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:37:01.993 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:37:29.034 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 34944 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:37:29.035 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:37:30.064 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:37:30.067 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:37:30.107 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-12-19.21:37:32.322 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:37:33.634 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:37:33.663 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:37:36.512 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:37:36.631 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 8.09 seconds (JVM running for 9.186)
+24-12-19.21:37:37.307 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:37:37.885 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:37:37.963 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:37.964 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:37:37.964 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:37:37.964 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:37:37.970 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:38.148 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:38.175 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:38.176 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:37:38.176 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:37:38.176 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:37:38.176 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:37:38.186 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:38.199 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:38.200 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:37:38.200 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:37:38.200 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:37:38.200 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:37:38.203 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:37:38.248 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:37:38.249 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:37:38.272 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:37:38.332 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:37:38.424 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:37:38.454 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:41:33.259 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 12096 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:41:33.260 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:41:34.369 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:41:34.373 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:41:34.417 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-12-19.21:41:36.789 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:41:38.009 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:41:38.029 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:41:40.550 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:41:40.654 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.843 seconds (JVM running for 8.852)
+24-12-19.21:41:41.232 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:41:41.561 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:41:41.625 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:41:41.626 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:41:41.627 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:41:41.627 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:41:41.631 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:41:41.734 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:41:41.758 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:41:41.758 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:41:41.758 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:41:41.758 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:41:41.759 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:41:41.765 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:41:41.765 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:41:41.765 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:41:41.766 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:41:41.766 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:41:41.766 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:41:41.772 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:41:41.773 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:41:41.773 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:41:41.773 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:41:41.773 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:41:41.776 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:41:41.816 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:41:41.816 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:42:08.948 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:42:09.036 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:42:21.321 [main            ] INFO  RuleLockLogicFilter    - 规则过滤-权重范围 userId:user001 strategyId:100001 ruleModel:rule_lock
+24-12-19.21:42:33.810 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:42:33.810 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:42:33.811 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:42:33.811 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:42:33.892 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:42:35.279 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:42:35.289 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:42:35.290 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:42:35.290 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:42:35.290 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:42:35.290 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:42:35.295 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:42:35.296 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:42:35.296 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:42:35.296 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:42:35.296 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:42:35.297 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:42:35.302 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:42:35.302 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:42:35.303 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:42:35.303 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:42:35.303 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:42:35.342 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:42:36.017 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:42:36.018 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:42:44.348 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:42:44.354 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:43:58.503 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user001"}
+24-12-19.21:44:02.389 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
+24-12-19.21:45:23.916 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s551ms500µs400ns).
+24-12-19.21:45:23.956 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:45:23.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:45:28.860 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 13140 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:45:28.861 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:45:30.038 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:45:30.041 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:45:30.075 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-12-19.21:45:32.422 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:45:33.628 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:45:33.650 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:45:35.858 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:45:35.937 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.571 seconds (JVM running for 8.693)
+24-12-19.21:45:36.403 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:45:36.706 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:45:36.767 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:45:36.768 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:45:36.769 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:45:36.769 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:45:36.773 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:45:36.893 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:45:36.916 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:45:36.916 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:45:36.917 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:45:36.917 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:45:36.917 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:45:36.924 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:45:36.930 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:45:36.930 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:45:36.931 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:45:36.931 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:45:36.931 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:45:36.933 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:45:36.972 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:45:36.972 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:45:44.068 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:45:44.104 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:45:50.927 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:45:50.930 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:45:56.396 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:45:56.400 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:47:16.101 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m39s286ms178µs100ns).
+24-12-19.21:47:16.174 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:47:16.196 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:47:19.687 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 16012 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:47:19.710 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:47:20.704 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:47:20.709 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:47:20.747 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-12-19.21:47:23.101 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:47:24.265 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:47:24.283 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:47:26.315 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:47:26.396 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.151 seconds (JVM running for 8.141)
+24-12-19.21:47:26.862 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:47:27.159 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:47:27.214 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:27.215 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:47:27.216 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:47:27.216 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:47:27.220 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:27.329 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:27.350 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:27.351 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:47:27.351 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:47:27.351 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:47:27.351 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:27.357 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:27.357 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:27.357 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:47:27.357 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:47:27.358 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:47:27.358 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:27.364 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:27.364 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:27.364 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:47:27.365 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:47:27.365 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:47:27.367 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:27.403 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:27.403 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:47:29.676 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:47:29.705 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:47:29.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:47:29.790 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:47:46.134 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 7924 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:47:46.135 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:47:47.133 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:47:47.136 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:47:47.173 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-12-19.21:47:49.453 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:47:50.638 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:47:50.657 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:47:52.772 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:47:52.844 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.162 seconds (JVM running for 8.161)
+24-12-19.21:47:53.285 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:47:53.590 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:47:53.648 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:53.649 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:47:53.650 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:47:53.650 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:47:53.654 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:53.762 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:53.784 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:53.784 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:47:53.784 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:47:53.784 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:47:53.785 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:53.790 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:53.790 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:53.791 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:47:53.791 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:47:53.791 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:47:53.791 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:53.796 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:53.796 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:47:53.796 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:47:53.796 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:47:53.796 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:47:53.800 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:47:53.839 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:47:53.839 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:48:08.710 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:48:08.806 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:48:58.616 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s919ms271µs900ns).
+24-12-19.21:48:58.616 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:48:58.625 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:49:08.164 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:49:08.170 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:54:03.768 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m34s662ms876µs700ns).
+24-12-19.21:54:03.768 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:54:03.777 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-12-19.21:54:03.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:54:03.844 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:54:11.819 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 7396 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:54:11.820 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:54:12.621 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:54:12.624 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:54:12.655 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-12-19.21:54:14.789 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:54:15.903 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:54:15.922 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:54:17.741 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:54:17.817 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.349 seconds (JVM running for 7.125)
+24-12-19.21:54:18.241 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:54:18.539 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:54:18.601 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:54:18.602 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:54:18.602 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:54:18.602 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:54:18.606 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:54:18.708 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:54:18.729 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:54:18.729 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:54:18.729 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:54:18.729 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:54:18.729 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:54:18.735 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:54:18.741 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:54:18.741 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:54:18.741 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:54:18.742 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:54:18.742 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:54:18.745 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:54:18.776 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:54:18.776 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:54:18.784 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:54:18.785 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:54:18.785 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.21:54:18.785 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.21:54:18.785 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:54:18.790 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:54:18.798 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:54:18.827 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:54:18.851 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:54:18.894 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:54:18.913 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:55:47.832 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 20444 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:55:47.834 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:55:48.827 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:55:48.830 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:55:48.871 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-12-19.21:55:51.055 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:55:52.184 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:55:52.201 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:55:54.183 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:55:54.255 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.86 seconds (JVM running for 8.008)
+24-12-19.21:55:54.684 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:55:54.960 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:55:55.011 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:55:55.012 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:55:55.012 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:55:55.012 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:55:55.016 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:55:55.111 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:55:55.130 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:55:55.130 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:55:55.130 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:55:55.131 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:55:55.131 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:55:55.137 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:55:55.144 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:55:55.145 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:55:55.145 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:55:55.145 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:55:55.145 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:55:55.148 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:55:55.183 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:55:55.183 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:55:55.195 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:55:55.195 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:55:55.195 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.21:55:55.195 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.21:55:55.195 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:55:55.202 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:55:55.205 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:56:49.327 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:57:42.277 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:59:31.407 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:59:33.403 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.21:59:41.195 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 22924 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.21:59:41.196 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.21:59:42.182 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.21:59:42.186 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.21:59:42.220 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-12-19.21:59:44.433 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.21:59:45.562 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:59:45.579 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.21:59:47.776 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.21:59:47.842 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.106 seconds (JVM running for 8.044)
+24-12-19.21:59:48.273 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.21:59:48.583 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.21:59:48.644 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:59:48.645 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:59:48.646 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.21:59:48.646 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.21:59:48.650 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:59:48.762 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:59:48.781 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:59:48.782 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.21:59:48.782 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.21:59:48.782 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.21:59:48.783 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:59:48.789 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:59:48.789 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:59:48.790 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.21:59:48.790 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.21:59:48.790 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.21:59:48.790 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:59:48.797 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:59:48.797 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:59:48.797 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:59:48.797 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.21:59:48.797 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.21:59:48.800 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:59:48.836 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:59:48.836 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:59:48.845 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.21:59:48.846 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.21:59:48.846 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.21:59:48.846 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.21:59:48.846 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.21:59:48.851 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.21:59:48.854 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.21:59:51.934 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:59:53.568 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.21:59:53.741 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user001"}
+24-12-19.21:59:53.744 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":100}
+24-12-19.21:59:53.777 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.21:59:53.793 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.22:01:17.822 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 25580 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.22:01:17.824 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.22:01:18.720 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.22:01:18.724 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.22:01:18.757 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-12-19.22:01:21.056 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.22:01:22.188 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:01:22.204 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:01:24.130 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.22:01:24.197 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.735 seconds (JVM running for 7.488)
+24-12-19.22:01:24.659 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.22:01:24.953 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.22:01:25.009 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:25.010 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:25.010 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.22:01:25.010 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.22:01:25.014 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:25.122 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:25.141 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:25.142 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.22:01:25.142 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.22:01:25.143 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.22:01:25.143 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.22:01:25.149 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:25.154 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:25.155 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:25.155 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:25.155 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.22:01:25.155 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.22:01:25.158 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:25.199 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:25.200 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:01:25.210 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:25.211 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:25.211 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.22:01:25.211 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.22:01:25.211 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:25.216 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:25.219 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:01:25.417 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100003,"userId":"xiaofuge"}
+24-12-19.22:01:25.420 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":108}
+24-12-19.22:01:25.455 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.22:01:25.473 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.22:01:37.804 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 2332 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.22:01:37.811 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.22:01:38.699 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.22:01:38.705 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.22:01:38.745 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-12-19.22:01:41.132 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.22:01:42.378 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:01:42.395 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:01:44.363 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.22:01:44.425 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.973 seconds (JVM running for 7.724)
+24-12-19.22:01:44.896 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.22:01:45.184 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.22:01:45.234 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:45.235 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:45.236 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.22:01:45.236 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.22:01:45.239 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:45.335 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:45.351 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:45.352 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.22:01:45.352 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.22:01:45.352 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.22:01:45.352 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.22:01:45.357 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:45.364 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:45.364 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:45.364 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:45.364 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.22:01:45.364 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.22:01:45.367 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:45.397 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:45.398 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:01:45.406 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:01:45.406 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:01:45.406 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.22:01:45.407 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.22:01:45.407 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:01:45.412 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:01:45.414 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:01:45.422 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.22:01:45.457 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.22:01:45.620 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user001"}
+24-12-19.22:01:45.623 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":100}
+24-12-19.22:01:45.659 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.22:01:45.680 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.22:01:58.834 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 1956 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.22:01:58.840 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.22:01:59.694 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.22:01:59.699 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.22:01:59.739 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-12-19.22:02:01.952 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.22:02:03.094 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:02:03.111 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:02:05.119 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.22:02:05.187 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.689 seconds (JVM running for 7.474)
+24-12-19.22:02:05.652 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.22:02:05.939 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.22:02:05.990 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:02:05.990 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:02:05.991 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.22:02:05.991 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.22:02:05.994 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:02:06.098 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:02:06.116 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:02:06.116 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.22:02:06.116 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.22:02:06.117 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.22:02:06.117 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:02:06.122 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:02:06.122 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:02:06.122 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.22:02:06.123 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.22:02:06.123 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.22:02:06.123 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:02:06.128 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:02:06.128 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:02:06.128 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:02:06.128 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.22:02:06.128 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.22:02:06.131 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:02:06.160 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:02:06.160 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:02:06.168 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:02:06.169 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:02:06.169 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.22:02:06.169 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.22:02:06.169 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:02:06.173 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:02:06.176 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:02:06.364 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100003,"userId":"xiaofuge"}
+24-12-19.22:02:06.368 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":107}
+24-12-19.22:02:06.403 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.22:02:06.422 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-19.22:05:33.144 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 25212 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-19.22:05:33.145 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-19.22:05:34.012 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-19.22:05:34.017 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-19.22:05:34.054 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-12-19.22:05:36.244 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-19.22:05:37.370 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:05:37.386 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-19.22:05:39.363 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-19.22:05:39.443 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.695 seconds (JVM running for 7.617)
+24-12-19.22:05:39.874 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-19.22:05:40.174 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-19.22:05:40.223 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:05:40.224 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:05:40.224 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-19.22:05:40.224 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：10000
+24-12-19.22:05:40.227 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:05:40.322 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:05:40.341 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:05:40.341 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.1000
+24-12-19.22:05:40.341 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6000
+24-12-19.22:05:40.341 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：6
+24-12-19.22:05:40.342 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0400
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.6900
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：18
+24-12-19.22:05:40.347 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:05:40.352 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:05:40.352 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:05:40.352 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:05:40.352 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.7000
+24-12-19.22:05:40.352 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：7000
+24-12-19.22:05:40.354 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:05:40.387 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:05:40.387 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:05:40.397 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-19.22:05:40.398 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0001
+24-12-19.22:05:40.398 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：0.0500
+24-12-19.22:05:40.398 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：500
+24-12-19.22:05:40.398 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-19.22:05:40.403 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-19.22:05:40.406 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-19.22:05:40.413 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.22:05:40.438 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单放行 userId: user strategyId: 100001 ruleModel: rule_blacklist
+24-12-19.22:05:40.438 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重分配开始 userId: user strategyId: 100001 ruleModel: rule_weight
+24-12-19.22:05:40.441 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user strategyId: 100001 ruleModel: rule_weight
+24-12-19.22:05:40.612 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100001,"userId":"user"}
+24-12-19.22:05:40.616 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":106}
+24-12-19.22:05:40.652 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-19.22:05:40.671 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

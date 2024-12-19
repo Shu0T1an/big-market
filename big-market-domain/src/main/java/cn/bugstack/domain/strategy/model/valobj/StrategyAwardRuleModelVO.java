@@ -1,6 +1,6 @@
 package cn.bugstack.domain.strategy.model.valobj;
 
-import cn.bugstack.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import cn.bugstack.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import cn.bugstack.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,6 +36,7 @@ public class StrategyAwardRuleModelVO {
     // 抽奖前的过滤的rule_model
     public String[] raffleCenterRuleModelList() {
         List<String> ruleModelList = new ArrayList<>();
+        if(ruleModelList == null || ruleModelList.isEmpty()) return null;
         String[] ruleModelValues = ruleModels.split(Constants.SPLIT);
         for (String ruleModelValue : ruleModelValues) {
             if (DefaultLogicFactory.LogicModel.isCenter(ruleModelValue)) {
