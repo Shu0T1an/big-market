@@ -1019,3 +1019,121 @@ Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CT
 24-12-22.15:25:37.783 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
 24-12-22.15:25:37.812 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-22.15:25:37.826 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-22.21:42:40.946 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 35468 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-22.21:42:40.947 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-22.21:42:42.000 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-22.21:42:42.002 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-22.21:42:42.035 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-12-22.21:42:44.204 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-22.21:42:45.554 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-22.21:42:45.570 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-22.21:42:47.361 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-22.21:42:47.424 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.825 seconds (JVM running for 7.646)
+24-12-22.21:42:47.848 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-22.21:42:48.148 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-22.21:42:48.201 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-22.21:42:48.201 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0300
+24-12-22.21:42:48.202 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-22.21:42:48.202 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：34
+24-12-22.21:42:48.202 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-22.21:42:48.211 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-22.21:42:48.217 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-22.21:42:48.225 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
+24-12-22.21:42:48.226 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+24-12-22.21:42:48.235 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.236 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.240 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.262 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:102 ruleValue:101:1,100
+24-12-22.21:42:48.262 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:42:48.262 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:42:48.438 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:42:48.441 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:42:48.446 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
+24-12-22.21:42:48.446 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+24-12-22.21:42:48.451 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.451 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.454 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.456 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:102 ruleValue:101:1,100
+24-12-22.21:42:48.456 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:42:48.456 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:42:48.456 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:42:48.456 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:42:48.460 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
+24-12-22.21:42:48.460 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+24-12-22.21:42:48.465 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.465 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.468 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:42:48.470 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:102 ruleValue:101:1,100
+24-12-22.21:42:48.470 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:42:48.470 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:42:48.470 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:42:48.470 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:43:52.592 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-22.21:43:52.606 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-22.21:44:00.516 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 43644 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-22.21:44:00.517 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-12-22.21:44:01.340 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-22.21:44:01.342 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-22.21:44:01.379 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-12-22.21:44:03.650 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-22.21:44:05.029 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-22.21:44:05.046 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-22.21:44:07.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-22.21:44:07.287 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.127 seconds (JVM running for 7.853)
+24-12-22.21:44:07.735 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-22.21:44:08.016 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-22.21:44:08.058 [main            ] INFO  StrategyArmoryDispatch - 查询策略完毕
+24-12-22.21:44:08.059 [main            ] INFO  StrategyArmoryDispatch - 最小的概率为：0.0300
+24-12-22.21:44:08.059 [main            ] INFO  StrategyArmoryDispatch - 概率值的总和：1.0000
+24-12-22.21:44:08.059 [main            ] INFO  StrategyArmoryDispatch - 概率范围为：34
+24-12-22.21:44:08.060 [main            ] INFO  StrategyArmoryDispatch - 打乱集合
+24-12-22.21:44:08.067 [main            ] INFO  StrategyArmoryDispatch - 已经持久化
+24-12-22.21:44:08.072 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-12-22.21:44:08.080 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
+24-12-22.21:44:08.080 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+24-12-22.21:44:08.089 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.090 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.094 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.114 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:102 ruleValue:101:1,100
+24-12-22.21:44:08.114 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:44:08.114 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:44:08.258 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:44:08.261 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:44:08.266 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
+24-12-22.21:44:08.266 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+24-12-22.21:44:08.270 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.270 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.273 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+24-12-22.21:44:08.274 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:102 ruleValue:101:1,100
+24-12-22.21:44:08.274 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:44:08.274 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:44:08.274 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:44:08.274 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:44:08.279 [main            ] INFO  DefalutLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 101
+24-12-22.21:44:08.279 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 101 rule_default
+24-12-22.21:44:08.281 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:xiaofuge strategyId:100006 awardId:101
+24-12-22.21:44:08.281 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:101
+24-12-22.21:44:08.285 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:101
+24-12-22.21:44:08.287 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 ruleValue:101:1,100
+24-12-22.21:44:08.287 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:xiaofuge strategyId:100006 awardId:101 awardRuleValue:1,100
+24-12-22.21:44:08.287 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 101 1,100
+24-12-22.21:44:08.287 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"xiaofuge"}
+24-12-22.21:44:08.287 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
+24-12-22.21:44:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:10.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-12-22.21:44:15.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:15.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-12-22.21:44:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:20.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-12-22.21:44:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-12-22.21:44:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-12-22.21:44:35.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:101
+24-12-22.21:44:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:45.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-22.21:44:58.494 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-22.21:44:58.510 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
