@@ -1,11 +1,7 @@
-24-12-22.14:35:34.289 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s91ms497µs500ns).
-24-12-22.14:41:02.232 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s704ms315µs900ns).
-24-12-22.14:42:47.302 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s337ms455µs200ns).
-24-12-22.14:44:36.598 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s296ms62µs800ns).
-24-12-22.14:47:45.565 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s455ms130µs300ns).
-24-12-22.14:54:38.090 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s927ms356µs300ns).
-24-12-22.14:58:54.152 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s341ms647µs200ns).
-24-12-22.14:59:10.274 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x3aed368c, L:/127.0.0.1:11395 - R:127.0.0.1/127.0.0.1:6379]
+24-12-23.08:22:13.200 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s810ms767µs800ns).
+24-12-23.08:28:50.799 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m37s599ms331µs).
+24-12-23.08:31:29.870 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s634ms228µs199ns).
+24-12-23.08:41:09.890 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xec408075, L:/127.0.0.1:4265 - R:127.0.0.1/127.0.0.1:6379]
 org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
 	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
@@ -15,7 +11,7 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-24-12-22.14:59:10.281 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x5229d9fa, L:/127.0.0.1:11394 - R:127.0.0.1/127.0.0.1:6379]
+24-12-23.08:41:13.586 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x0114d42d, L:/127.0.0.1:4266 - R:127.0.0.1/127.0.0.1:6379]
 org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
 	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
@@ -25,156 +21,25 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-24-12-22.15:00:29.204 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s885ms573µs500ns).
-24-12-22.15:03:42.373 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s212ms108µs200ns).
-24-12-22.15:05:11.509 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s215ms861µs200ns).
-24-12-22.15:07:55.152 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m942ms886µs200ns).
-24-12-22.15:10:12.114 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s719ms15µs600ns).
-24-12-22.15:11:28.650 [redisson-netty-2-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0xf2eeeba3, L:/127.0.0.1:4675 - R:127.0.0.1/127.0.0.1:6379], reply: ReplayingDecoderByteBuf(ridx=284, widx=284), command: (GET), promise: java.util.concurrent.CompletableFuture@493020a4[Not completed, 1 dependents], params: [big_market_strategy_award_key_100001]
-com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:713)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2461)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:698)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+24-12-23.08:41:57.444 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m27s574ms708µs801ns).
+24-12-23.08:42:52.902 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s457ms601µs300ns).
+24-12-23.08:43:10.205 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x060ebf39, L:/127.0.0.1:4264 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-24-12-22.15:11:28.660 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xf2eeeba3, L:/127.0.0.1:4675 - R:127.0.0.1/127.0.0.1:6379]
-io.netty.handler.codec.DecoderException: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+24-12-23.08:43:12.943 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xb6eade44, L:/127.0.0.1:4263 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:713)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2461)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:698)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	... 17 common frames omitted
-24-12-22.15:21:45.772 [redisson-netty-2-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0xa84ec500, L:/127.0.0.1:13107 - R:127.0.0.1/127.0.0.1:6379], reply: ReplayingDecoderByteBuf(ridx=284, widx=284), command: (GET), promise: java.util.concurrent.CompletableFuture@142f867f[Not completed, 1 dependents], params: [big_market_strategy_award_key_100001]
-com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:713)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2461)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:698)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:750)
-24-12-22.15:21:45.780 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xa84ec500, L:/127.0.0.1:13107 - R:127.0.0.1/127.0.0.1:6379]
-io.netty.handler.codec.DecoderException: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:713)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2461)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:698)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:394)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	... 17 common frames omitted

@@ -1,10 +1,12 @@
 package cn.bugstack.domain.strategy.service.raffle;
 
+import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.AbstractRaffleStrategy;
+import cn.bugstack.domain.strategy.service.IRaffleAward;
 import cn.bugstack.domain.strategy.service.IRaffleStock;
 import cn.bugstack.domain.strategy.service.IRaffleStrategy;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
@@ -17,6 +19,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
+import java.util.List;
 
 
 /**
@@ -26,7 +30,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStrategy, IRaffleStock {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward {
 
 
     protected DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory defaultChainFactory, DefaultTreeFactory defaultTreeFactory) {
@@ -61,5 +65,10 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     @Override
     public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
         repository.updateStrategyAwardStock(strategyId, awardId);
+    }
+
+    @Override
+    public List<StrategyAwardEntity> queryRaffleStrategyAwardList(Long strategyId) {
+        return repository.queryStrategyAwardList(strategyId);
     }
 }

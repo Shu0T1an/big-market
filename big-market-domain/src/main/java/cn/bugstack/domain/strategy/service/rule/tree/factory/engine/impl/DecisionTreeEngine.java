@@ -40,11 +40,11 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
             String ruleValue = ruleTreeNode.getRuleValue();
 
+            // 通过一个树后获得一个逻辑实体，里面有是否放行的标识，还有策略奖品实体
             DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId,ruleValue);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardVO = logicEntity.getStrategyAwardVO();
-
-            // 获取下个节点
+            // 获取下个节点 传入的是本树获得的逻辑实体的视图，以及当前节点的子节点list，看看传入逻辑实体的是take over 还是allow 决定下一个走哪一个节点
             nextNode = nextNode(ruleLogicCheckTypeVO.getCode(), ruleTreeNode.getTreeNodeLineVOList());
             ruleTreeNode = treeNodeMap.get(nextNode);
         }
@@ -59,13 +59,13 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        return null;
     }
 
     public boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine) {
         switch (nodeLine.getRuleLimitType()) {
             case EQUAL:
-                return matterValue.equals(nodeLine.getRuleLimitValue().getCode());
+                return matterValue.equals(nodeLine.getRuleLimitValue().getCode()); //当传入的值和规则值相等时，返回true
             // 以下规则暂时不需要实现
             case GT:
             case LT:
