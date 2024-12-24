@@ -33,10 +33,13 @@ import java.util.List;
 @RequestMapping("/api/${app.config.api-version}/raffle/")
 public class RaffleController implements IRaffleService {
 
+    // 与抽奖奖品的有关接口
     @Resource
     private IRaffleAward raffleAward;
+    // 与抽奖策略的有关接口
     @Resource
     private IRaffleStrategy raffleStrategy;
+    // 与抽奖策略奖品装配的有关接口
     @Resource
     private IStrategyArmory strategyArmory;
 
