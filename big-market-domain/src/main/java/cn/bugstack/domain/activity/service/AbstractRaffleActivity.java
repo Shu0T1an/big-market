@@ -35,25 +35,27 @@ public abstract class AbstractRaffleActivity extends  RaffleActivitySupport impl
 
         //2. 查询基础信息
         ActivitySkuEntity activitySkuEntity = queryActivitySku(sku);
-
+        // 获取活动实体
         ActivityEntity activityEntity = queryRaffleActivityByActivityId(activitySkuEntity.getActivityId());
-
+        // 获取库存实体
         ActivityCountEntity activityCountEntity = queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
-
+        // 获取责任链
         IActionChain actionChain = defaultActivityChainFactory.openActionChain();
-
+        // 责任链结果
         boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
-
+        // 创建聚合订单
         CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
-
+        // 保存聚合订单
         doSaveOrder(createOrderAggregate);
-
+        // 返回聚合订单的Id
         return createOrderAggregate.getActivityOrderEntity().getOrderId();
     }
 
     protected abstract void doSaveOrder(CreateOrderAggregate createOrderAggregate);
 
-    protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
+    protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity
+            , ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity
+            , ActivityCountEntity activityCountEntity);
 
 
     @Override

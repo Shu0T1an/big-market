@@ -211,7 +211,7 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public Boolean subtractionAwardStock(String cacheKey) {
-        long surplus = redisService.decr(cacheKey);//原子性操作
+        long surplus = redisService.decr(cacheKey);//原子性操作,所以加锁的时候，也是唯一的。
         if (surplus < 0) {
             // 库存小于0，恢复为0个
             redisService.setValue(cacheKey, 0);
