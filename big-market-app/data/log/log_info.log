@@ -147,3 +147,467 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 24-12-23.08:45:11.310 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":101}
 24-12-23.08:45:11.350 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-23.08:45:11.365 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-25.09:24:20.469 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 3020 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:24:20.469 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
+24-12-25.09:24:21.926 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:24:21.930 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:24:21.965 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-12-25.09:24:22.108 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IAwardDao' for bean class [cn.bugstack.infrastructure.persistent.dao.dao.IAwardDao] conflicts with existing, non-compatible bean definition of same name and class [cn.bugstack.infrastructure.persistent.dao.IAwardDao]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:310)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:204)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+24-12-25.09:24:22.111 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@206a70ef] to prepare test instance [cn.bugstack.test.infrastructure.RaffleActivityDaoTest@1128620c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IAwardDao' for bean class [cn.bugstack.infrastructure.persistent.dao.dao.IAwardDao] conflicts with existing, non-compatible bean definition of same name and class [cn.bugstack.infrastructure.persistent.dao.IAwardDao]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:310)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:204)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+24-12-25.09:25:50.146 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 22992 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:25:50.154 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
+24-12-25.09:25:51.124 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:25:51.127 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:25:51.161 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-12-25.09:25:51.304 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IAwardDao' for bean class [cn.bugstack.infrastructure.persistent.dao.dao.IAwardDao] conflicts with existing, non-compatible bean definition of same name and class [cn.bugstack.infrastructure.persistent.dao.IAwardDao]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:310)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:204)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+24-12-25.09:25:51.307 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4961f6af] to prepare test instance [cn.bugstack.test.infrastructure.RaffleActivityDaoTest@4bbb49b0]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IAwardDao' for bean class [cn.bugstack.infrastructure.persistent.dao.dao.IAwardDao] conflicts with existing, non-compatible bean definition of same name and class [cn.bugstack.infrastructure.persistent.dao.IAwardDao]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:310)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:204)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+24-12-25.09:28:21.849 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 37592 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:28:21.851 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
+24-12-25.09:28:22.811 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:28:22.817 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:28:22.871 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+24-12-25.09:28:25.534 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:28:26.758 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:28:26.775 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:28:29.121 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:28:29.196 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 7.723 seconds (JVM running for 8.541)
+24-12-25.09:28:29.512 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:28:29.832 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:28:30.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-25.09:28:30.046 [main            ] INFO  RaffleActivityDaoTest  - 测试结果：{"activityCountId":1,"activityDesc":"测试活动","activityId":100301,"activityName":"测试活动","beginDateTime":"2024-03-09 18:15:10","endDateTime":"2034-03-09 18:15:10","state":"0","stockCount":1000,"stockCountSurplus":1000,"strategyId":100006}
+24-12-25.09:37:18.085 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 11288 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:37:18.086 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:37:19.009 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:37:19.011 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:37:19.045 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-12-25.09:37:21.380 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:37:22.446 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:37:22.462 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:37:24.699 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:37:24.796 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 7.052 seconds (JVM running for 7.856)
+24-12-25.09:37:25.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-25.09:37:25.057 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:37:25.376 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:38:28.658 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 13956 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:38:28.658 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:38:29.699 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:38:29.705 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:38:29.766 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+24-12-25.09:38:32.172 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:38:33.355 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:38:33.374 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:38:35.468 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:38:35.543 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 7.217 seconds (JVM running for 8.038)
+24-12-25.09:38:35.818 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:38:36.125 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:42:11.765 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 20852 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:42:11.788 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:42:12.610 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:42:12.613 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:42:12.654 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+24-12-25.09:42:14.937 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:42:16.085 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:42:16.104 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:42:18.266 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:42:18.337 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 6.91 seconds (JVM running for 7.704)
+24-12-25.09:42:18.610 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:42:18.926 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:42:19.171 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"915824040145","orderTime":1735090938579,"state":"not_used","strategyId":100006,"userId":"eOMtThyhVNLWUZNRcBaQKxI"}
+24-12-25.09:42:19.182 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"626293894813","orderTime":1735090939171,"state":"not_used","strategyId":100006,"userId":"yedUsFwdkelQbxeTeQOvaScfqIOOmaa"}
+24-12-25.09:42:19.182 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:42:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-12-25.09:42:24.367 [main            ] ERROR HikariPool             - Retail_HikariCP - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:194)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy105.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy151.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.bugstack.middleware.db.router.DBRouterJoinPoint.doRouter(DBRouterJoinPoint.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at com.sun.proxy.$Proxy152.insert(Unknown Source)
+	at cn.bugstack.test.infrastructure.RaffleActivityOrderDaoTest.test_insert_random(RaffleActivityOrderDaoTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'big_market_02'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:792)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:717)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:685)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:134)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:469)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 90 common frames omitted
+24-12-25.09:48:44.812 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 29640 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:48:44.814 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:48:45.750 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:48:45.755 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:48:45.804 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+24-12-25.09:48:48.117 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:48:49.198 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:48:49.215 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:48:51.378 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:48:51.443 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 6.998 seconds (JVM running for 7.771)
+24-12-25.09:48:51.717 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:48:52.032 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:48:52.212 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"346617201318","orderTime":1735091331684,"state":"not_used","strategyId":100006,"userId":"eOMtThyhVNLWUZNRcBaQKxI"}
+24-12-25.09:48:52.223 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"921359434485","orderTime":1735091332212,"state":"not_used","strategyId":100006,"userId":"yedUsFwdkelQbxeTeQOvaScfqIOOmaa"}
+24-12-25.09:48:52.223 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:48:52.246 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:48:52.259 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"822604566915","orderTime":1735091332223,"state":"not_used","strategyId":100006,"userId":"JxkyvRnL"}
+24-12-25.09:48:52.268 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"723764049435","orderTime":1735091332259,"state":"not_used","strategyId":100006,"userId":"RYtGKbgicZaHCBRQDSx"}
+24-12-25.09:48:52.283 [main            ] INFO  RaffleActivityOrderDaoTest - 第i次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"097351362280","orderTime":1735091332269,"state":"not_used","strategyId":100006,"userId":"VLhpfQGTMDYpsBZxvfBoeygjb"}
+24-12-25.09:50:54.529 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 23432 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:50:54.529 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:50:55.454 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:50:55.459 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:50:55.496 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+24-12-25.09:50:57.717 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:50:58.792 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:50:58.808 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:51:00.895 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:51:00.969 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 6.802 seconds (JVM running for 7.725)
+24-12-25.09:51:01.245 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:51:01.560 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:51:01.762 [main            ] INFO  RaffleActivityOrderDaoTest - 第 0 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"391651973559","orderTime":1735091461210,"state":"not_used","strategyId":100006,"userId":"eOMtThyhVNLWUZNRcBaQKxI"}
+24-12-25.09:51:01.777 [main            ] INFO  RaffleActivityOrderDaoTest - 第 1 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"478919417887","orderTime":1735091461763,"state":"not_used","strategyId":100006,"userId":"yedUsFwdkelQbxeTeQOvaScfqIOOmaa"}
+24-12-25.09:51:01.777 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:51:01.795 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:51:01.805 [main            ] INFO  RaffleActivityOrderDaoTest - 第 2 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"197816947508","orderTime":1735091461777,"state":"not_used","strategyId":100006,"userId":"JxkyvRnL"}
+24-12-25.09:51:01.813 [main            ] INFO  RaffleActivityOrderDaoTest - 第 3 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"879618602120","orderTime":1735091461805,"state":"not_used","strategyId":100006,"userId":"RYtGKbgicZaHCBRQDSx"}
+24-12-25.09:51:01.825 [main            ] INFO  RaffleActivityOrderDaoTest - 第 4 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"441211282108","orderTime":1735091461813,"state":"not_used","strategyId":100006,"userId":"VLhpfQGTMDYpsBZxvfBoeygjb"}
+24-12-25.09:51:01.834 [main            ] INFO  RaffleActivityOrderDaoTest - 第 5 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"636827397711","orderTime":1735091461825,"state":"not_used","strategyId":100006,"userId":"UMaAIKKIkknjWEXJUfPxxQHeWKEJ"}
+24-12-25.09:51:01.847 [main            ] INFO  RaffleActivityOrderDaoTest - 第 6 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"971474394057","orderTime":1735091461835,"state":"not_used","strategyId":100006,"userId":"dpHYZGhtgdntugzvvKAXLhM"}
+24-12-25.09:51:01.856 [main            ] INFO  RaffleActivityOrderDaoTest - 第 7 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"406570987924","orderTime":1735091461847,"state":"not_used","strategyId":100006,"userId":"LlN"}
+24-12-25.09:51:01.863 [main            ] INFO  RaffleActivityOrderDaoTest - 第 8 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"366942491206","orderTime":1735091461856,"state":"not_used","strategyId":100006,"userId":"gNfZBdyFGRajVfJNonEnOinZj"}
+24-12-25.09:51:01.874 [main            ] INFO  RaffleActivityOrderDaoTest - 第 9 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"542715139027","orderTime":1735091461863,"state":"not_used","strategyId":100006,"userId":"UfzQhdgLLfDTDGspDb"}
+24-12-25.09:51:01.884 [main            ] INFO  RaffleActivityOrderDaoTest - 第 10 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"573526920278","orderTime":1735091461875,"state":"not_used","strategyId":100006,"userId":"QvBQYuxiXXVytGCxzVllpgTJKhRQq"}
+24-12-25.09:51:01.894 [main            ] INFO  RaffleActivityOrderDaoTest - 第 11 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"497295301426","orderTime":1735091461884,"state":"not_used","strategyId":100006,"userId":"qszYL"}
+24-12-25.09:51:01.911 [main            ] INFO  RaffleActivityOrderDaoTest - 第 12 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"497694413239","orderTime":1735091461894,"state":"not_used","strategyId":100006,"userId":"YdvDhtAsLghPXAgtbprXPZkhnfLTBSX"}
+24-12-25.09:51:01.921 [main            ] INFO  RaffleActivityOrderDaoTest - 第 13 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"766536673325","orderTime":1735091461912,"state":"not_used","strategyId":100006,"userId":"sPB"}
+24-12-25.09:51:01.930 [main            ] INFO  RaffleActivityOrderDaoTest - 第 14 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"000185653783","orderTime":1735091461921,"state":"not_used","strategyId":100006,"userId":"Oxm"}
+24-12-25.09:51:01.941 [main            ] INFO  RaffleActivityOrderDaoTest - 第 15 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"513947841679","orderTime":1735091461930,"state":"not_used","strategyId":100006,"userId":"QIn"}
+24-12-25.09:51:01.951 [main            ] INFO  RaffleActivityOrderDaoTest - 第 16 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"217207512939","orderTime":1735091461942,"state":"not_used","strategyId":100006,"userId":"yIvpRgmgQsYEKk"}
+24-12-25.09:51:01.963 [main            ] INFO  RaffleActivityOrderDaoTest - 第 17 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"665552356402","orderTime":1735091461951,"state":"not_used","strategyId":100006,"userId":"AAAryjCRhLTuhnTodUewZQqaZErU"}
+24-12-25.09:51:01.973 [main            ] INFO  RaffleActivityOrderDaoTest - 第 18 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"502475206851","orderTime":1735091461963,"state":"not_used","strategyId":100006,"userId":"aofGvthLoyPLDADYzx"}
+24-12-25.09:51:01.984 [main            ] INFO  RaffleActivityOrderDaoTest - 第 19 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"562370404666","orderTime":1735091461973,"state":"not_used","strategyId":100006,"userId":"WoaMAzEEplqjJ"}
+24-12-25.09:51:01.993 [main            ] INFO  RaffleActivityOrderDaoTest - 第 20 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"705004970438","orderTime":1735091461984,"state":"not_used","strategyId":100006,"userId":"jNBgpTmxx"}
+24-12-25.09:51:02.003 [main            ] INFO  RaffleActivityOrderDaoTest - 第 21 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"304317463502","orderTime":1735091461994,"state":"not_used","strategyId":100006,"userId":"pIoQM"}
+24-12-25.09:51:02.013 [main            ] INFO  RaffleActivityOrderDaoTest - 第 22 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"014404207715","orderTime":1735091462003,"state":"not_used","strategyId":100006,"userId":"ODRhfGEfX"}
+24-12-25.09:51:02.026 [main            ] INFO  RaffleActivityOrderDaoTest - 第 23 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"631412026282","orderTime":1735091462013,"state":"not_used","strategyId":100006,"userId":"IoTtOmcBeivNUYv"}
+24-12-25.09:51:02.034 [main            ] INFO  RaffleActivityOrderDaoTest - 第 24 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"536260755471","orderTime":1735091462026,"state":"not_used","strategyId":100006,"userId":"PBzMiJFouxILNv"}
+24-12-25.09:51:02.044 [main            ] INFO  RaffleActivityOrderDaoTest - 第 25 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"774369138025","orderTime":1735091462034,"state":"not_used","strategyId":100006,"userId":"FthRIkE"}
+24-12-25.09:51:02.060 [main            ] INFO  RaffleActivityOrderDaoTest - 第 26 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"607653914432","orderTime":1735091462044,"state":"not_used","strategyId":100006,"userId":"gEYzhlSTPkcSUyTSbBkU"}
+24-12-25.09:51:02.076 [main            ] INFO  RaffleActivityOrderDaoTest - 第 27 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"453976588276","orderTime":1735091462060,"state":"not_used","strategyId":100006,"userId":"OV"}
+24-12-25.09:51:02.090 [main            ] INFO  RaffleActivityOrderDaoTest - 第 28 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"046371140869","orderTime":1735091462076,"state":"not_used","strategyId":100006,"userId":"dwprLNbgNvZUMpqAXLJbjE"}
+24-12-25.09:51:02.114 [main            ] INFO  RaffleActivityOrderDaoTest - 第 29 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"214013283507","orderTime":1735091462091,"state":"not_used","strategyId":100006,"userId":"TiQaUNWftniOAotnzWvkQt"}
+24-12-25.09:51:02.130 [main            ] INFO  RaffleActivityOrderDaoTest - 第 30 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"441677707122","orderTime":1735091462114,"state":"not_used","strategyId":100006,"userId":"Wru"}
+24-12-25.09:51:02.145 [main            ] INFO  RaffleActivityOrderDaoTest - 第 31 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"701885633284","orderTime":1735091462130,"state":"not_used","strategyId":100006,"userId":"zGVyIdgFUYNdkFYkkjNIeENlreqFLC"}
+24-12-25.09:51:02.162 [main            ] INFO  RaffleActivityOrderDaoTest - 第 32 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"919312026859","orderTime":1735091462146,"state":"not_used","strategyId":100006,"userId":"MFOPluIOMfSnzX"}
+24-12-25.09:51:02.180 [main            ] INFO  RaffleActivityOrderDaoTest - 第 33 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"460214422579","orderTime":1735091462162,"state":"not_used","strategyId":100006,"userId":"HuubOREhRXJoDCVcLCRmll"}
+24-12-25.09:51:02.202 [main            ] INFO  RaffleActivityOrderDaoTest - 第 34 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"224987274986","orderTime":1735091462180,"state":"not_used","strategyId":100006,"userId":"oBeMdQkAoYZDjfWhbzkmA"}
+24-12-25.09:51:02.219 [main            ] INFO  RaffleActivityOrderDaoTest - 第 35 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"936335202147","orderTime":1735091462202,"state":"not_used","strategyId":100006,"userId":"NBaxYoMSiMNxLXFLxIok"}
+24-12-25.09:51:02.228 [main            ] INFO  RaffleActivityOrderDaoTest - 第 36 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"488423042363","orderTime":1735091462220,"state":"not_used","strategyId":100006,"userId":"teOlrImKiDpJbLDnvK"}
+24-12-25.09:51:02.243 [main            ] INFO  RaffleActivityOrderDaoTest - 第 37 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"795438042890","orderTime":1735091462228,"state":"not_used","strategyId":100006,"userId":"DiACnbEKIFidn"}
+24-12-25.09:51:02.256 [main            ] INFO  RaffleActivityOrderDaoTest - 第 38 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"904563747708","orderTime":1735091462243,"state":"not_used","strategyId":100006,"userId":"AzTaco"}
+24-12-25.09:51:02.268 [main            ] INFO  RaffleActivityOrderDaoTest - 第 39 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"566520728841","orderTime":1735091462256,"state":"not_used","strategyId":100006,"userId":"M"}
+24-12-25.09:51:02.276 [main            ] INFO  RaffleActivityOrderDaoTest - 第 40 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"688192083806","orderTime":1735091462268,"state":"not_used","strategyId":100006,"userId":"O"}
+24-12-25.09:51:02.284 [main            ] INFO  RaffleActivityOrderDaoTest - 第 41 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"782985122724","orderTime":1735091462277,"state":"not_used","strategyId":100006,"userId":"yybxVLsNlAeLWVhnIULZAyLBms"}
+24-12-25.09:51:02.293 [main            ] INFO  RaffleActivityOrderDaoTest - 第 42 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"291011877799","orderTime":1735091462284,"state":"not_used","strategyId":100006,"userId":"LcdeWTdXPlQgjMVXbpRYzBT"}
+24-12-25.09:51:02.303 [main            ] INFO  RaffleActivityOrderDaoTest - 第 43 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"633777904098","orderTime":1735091462294,"state":"not_used","strategyId":100006,"userId":"jzlglRKAeamYUmWJtnJZLqwakeYcea"}
+24-12-25.09:51:02.313 [main            ] INFO  RaffleActivityOrderDaoTest - 第 44 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"982977836556","orderTime":1735091462303,"state":"not_used","strategyId":100006,"userId":"YFBlWcoVdFXlfhbUilkMpiHDMU"}
+24-12-25.09:51:02.325 [main            ] INFO  RaffleActivityOrderDaoTest - 第 45 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"529930046158","orderTime":1735091462313,"state":"not_used","strategyId":100006,"userId":"veErKUBEqCrhrtgx"}
+24-12-25.09:51:02.332 [main            ] INFO  RaffleActivityOrderDaoTest - 第 46 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"326715480427","orderTime":1735091462325,"state":"not_used","strategyId":100006,"userId":"JkjHewSlMWOIVYZjIEB"}
+24-12-25.09:51:02.340 [main            ] INFO  RaffleActivityOrderDaoTest - 第 47 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"780405830934","orderTime":1735091462333,"state":"not_used","strategyId":100006,"userId":"etqguztl"}
+24-12-25.09:51:02.347 [main            ] INFO  RaffleActivityOrderDaoTest - 第 48 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"094897085832","orderTime":1735091462340,"state":"not_used","strategyId":100006,"userId":"WtKhlfZzDZ"}
+24-12-25.09:51:02.358 [main            ] INFO  RaffleActivityOrderDaoTest - 第 49 次测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"244745548341","orderTime":1735091462348,"state":"not_used","strategyId":100006,"userId":"xlpKnXmsjfwUTYgfExSOnq"}
+24-12-25.09:53:13.707 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_432 on DESKTOP-IPVV05H with PID 37424 (started by 田硕 in D:\Java\Code\big-market\big-market-app)
+24-12-25.09:53:13.708 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
+24-12-25.09:53:15.397 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-12-25.09:53:15.400 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-12-25.09:53:15.438 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-12-25.09:53:17.865 [main            ] INFO  Version                - Redisson 3.23.4
+24-12-25.09:53:19.002 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:53:19.020 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-12-25.09:53:21.287 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-12-25.09:53:21.351 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 7.991 seconds (JVM running for 14.543)
+24-12-25.09:53:21.608 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-12-25.09:53:22.316 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-12-25.09:53:22.515 [main            ] INFO  RaffleActivityOrderDaoTest - 测试结果：[{"activityId":100301,"activityName":"测试活动","orderId":"88675199","orderTime":1709954149000,"state":"not_used","strategyId":100006,"userId":"xiaofuge"},{"activityId":100301,"activityName":"测试活动","orderId":"382877096957","orderTime":1709965454000,"state":"not_used","strategyId":100006,"userId":"xiaofuge"},{"activityId":100301,"activityName":"测试活动","orderId":"890829933161","orderTime":1735090716000,"state":"not_used","strategyId":100006,"userId":"xiaofuge"}]
