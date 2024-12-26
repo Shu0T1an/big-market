@@ -42,7 +42,7 @@ public abstract class AbstractRaffleActivity extends  RaffleActivitySupport impl
         // 获取责任链
         IActionChain actionChain = defaultActivityChainFactory.openActionChain();
         // 责任链结果
-        boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
+        actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
         // 创建聚合订单
         CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
         // 保存聚合订单
