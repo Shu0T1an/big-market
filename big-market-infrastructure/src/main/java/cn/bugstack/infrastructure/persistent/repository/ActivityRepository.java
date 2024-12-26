@@ -174,7 +174,7 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public boolean subtractionActivitySkuStock(Long sku, String cacheKey, Date endDateTime) {
-        //Todo 这里redis中会少一个数据 ，因为是-1在判断的，如果为1就直接返回
+        
         long surplus = redisService.decr(cacheKey);
         if (surplus == 0) {
             // 库存消耗没了以后，发送MQ消息，更新数据库库存
