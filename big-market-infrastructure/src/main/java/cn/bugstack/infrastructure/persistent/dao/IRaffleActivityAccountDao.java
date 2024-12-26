@@ -1,6 +1,7 @@
 package cn.bugstack.infrastructure.persistent.dao;
 
 import cn.bugstack.infrastructure.persistent.po.RaffleActivityAccount;
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,7 +11,17 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface IRaffleActivityAccountDao {
+
+    int updateActivityAccountSubtractionQuota(RaffleActivityAccount build);
+
+    void updateActivityAccountMonthSurplusImageQuota(RaffleActivityAccount build);
+
+    void updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount build);
+
     int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
 
     void insert(RaffleActivityAccount raffleActivityAccount);
+
+    @DBRouter
+    RaffleActivityAccount queryActivityAccountByUserId(RaffleActivityAccount raffleActivityAccountReq);
 }
