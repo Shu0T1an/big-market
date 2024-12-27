@@ -45,4 +45,8 @@ public interface IStrategyRepository {
     void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
 
     StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
+
+    Long queryStrategyIdByActivityId(Long activityId);
+
+    Integer queryTodayUserRaffleCount(String userId, Long strategyId);
 }

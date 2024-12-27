@@ -11,4 +11,5 @@ public interface IStrategyArmory {
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities);
 
+    boolean assembleLotteryStrategyByActivityId(Long activityId);
 }

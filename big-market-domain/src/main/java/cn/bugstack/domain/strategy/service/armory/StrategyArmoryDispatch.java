@@ -99,6 +99,12 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
     }
 
     @Override
+    public boolean assembleLotteryStrategyByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return assembleLotteryStrategy(strategyId);
+    }
+
+    @Override
     public Integer getRandomAwardId(Long strategyId) {
         int rateRange = repository.getRateRange(strategyId);
         return repository.getStrategyAwardAssemble(String.valueOf(strategyId),new Random().nextInt(rateRange));
