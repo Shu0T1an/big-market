@@ -80,6 +80,7 @@ public class AwardRepository implements IAwardRepository {
                     userAwardRecordDao.insert(userAwardRecord);
 
                     taskDao.insert(task);
+                    // 修改抽奖订单为used
                     int count = userRaffleOrderDao.updateUserRaffleOrderStateUsed(userRaffleOrderReq);
                     if (1 != count) {
                         status.setRollbackOnly();

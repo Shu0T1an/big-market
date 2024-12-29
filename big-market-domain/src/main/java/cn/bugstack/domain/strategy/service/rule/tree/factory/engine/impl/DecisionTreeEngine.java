@@ -9,6 +9,7 @@ import cn.bugstack.domain.strategy.service.rule.tree.ILogicTreeNode;
 import cn.bugstack.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -29,7 +30,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
     @Override
-    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
+    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId, Date endDateTime) {
         DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
 
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
@@ -41,7 +42,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
             String ruleValue = ruleTreeNode.getRuleValue();
 
             // 通过一个树后获得一个逻辑实体，里面有是否放行的标识，还有策略奖品实体
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId,ruleValue);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId,ruleValue,endDateTime);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardVO = logicEntity.getStrategyAwardVO();
             // 获取下个节点 传入的是本树获得的逻辑实体的视图，以及当前节点的子节点list，看看传入逻辑实体的是take over 还是allow 决定下一个走哪一个节点

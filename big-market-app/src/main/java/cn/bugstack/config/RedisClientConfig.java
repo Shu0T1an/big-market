@@ -35,7 +35,7 @@ public class RedisClientConfig {
         // 根据需要可以设定编解码器；https://github.com/redisson/redisson/wiki/4.-%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97%E5%8C%96
         // config.setCodec(new RedisCodec());
         // 中文编码
-//        config.setCodec(JsonJacksonCodec.INSTANCE);
+        config.setCodec(JsonJacksonCodec.INSTANCE);
         config.useSingleServer()
                 .setAddress("redis://" + properties.getHost() + ":" + properties.getPort())
 //                .setPassword(properties.getPassword())
