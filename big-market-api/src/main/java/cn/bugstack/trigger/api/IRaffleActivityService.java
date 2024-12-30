@@ -3,6 +3,9 @@ package cn.bugstack.trigger.api;
 import cn.bugstack.trigger.api.dto.ActivityDrawRequestDTO;
 import cn.bugstack.trigger.api.dto.ActivityDrawResponseDTO;
 import cn.bugstack.types.model.Response;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author: ts
@@ -26,4 +29,6 @@ public interface IRaffleActivityService {
     Response<ActivityDrawResponseDTO> draw(ActivityDrawRequestDTO request);
 
 
+    @RequestMapping(value = "calendar_sign_rebate", method = RequestMethod.POST)
+    Response<Boolean> calendarSignRebate(@RequestParam String userId);
 }
