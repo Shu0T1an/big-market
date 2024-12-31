@@ -20,7 +20,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
     @Resource
     private IStrategyDispatch strategyDispatch;
-    public Long userScore = 0L;
+
     @Override
     protected String ruleModel() {
         return DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode();
@@ -36,6 +36,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
         List<Long> analyticaSorteKeys =new ArrayList<>();
         Collections.sort(analyticaSorteKeys);
 
+        Integer userScore = repository.queryActivityAccountTotalUseCount(userId,strategyId);
         Long nextValue = analyticaSorteKeys.stream()
                 .sorted(Comparator.reverseOrder())
                 .filter(key -> userScore >= key)
