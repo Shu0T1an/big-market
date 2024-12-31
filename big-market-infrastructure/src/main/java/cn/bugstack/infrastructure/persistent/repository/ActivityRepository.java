@@ -24,6 +24,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -456,6 +457,11 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
+        Date currentDate = new Date();
+         final SimpleDateFormat dateFormatMonth = new SimpleDateFormat("yyyy-MM");
+         final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyy-MM-dd");
+        String month = dateFormatMonth.format(currentDate);
+        String day = dateFormatDay.format(currentDate);
         // 1. 查询总账户额度
         RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
                 .activityId(activityId)
@@ -479,12 +485,14 @@ public class ActivityRepository implements IActivityRepository {
         RaffleActivityAccountMonth raffleActivityAccountMonth = raffleActivityAccountMonthDao.queryActivityAccountMonthByUserId(RaffleActivityAccountMonth.builder()
                 .activityId(activityId)
                 .userId(userId)
+                .month(month)
                 .build());
 
         // 3. 查询日账户额度
         RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(RaffleActivityAccountDay.builder()
                 .activityId(activityId)
                 .userId(userId)
+                .day(day)
                 .build());
 
         // 组装对象
