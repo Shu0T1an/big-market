@@ -4,12 +4,15 @@ import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.repository.IActivityRepository;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
+import cn.bugstack.domain.activity.service.quota.policy.ITradePolicy;
 import cn.bugstack.domain.activity.service.quota.rule.IActionChain;
 import cn.bugstack.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+
+import java.util.Map;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -19,10 +22,13 @@ import org.apache.commons.lang3.StringUtils;
 @Slf4j
 public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityAccountQuotaSupport implements IRaffleActivityAccountQuotaService {
 
+    private final Map<String, ITradePolicy> tradePolicyGroup;
 
-    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory, Map<String, ITradePolicy> tradePolicyGroup) {
         super(activityRepository, defaultActivityChainFactory);
+        this.tradePolicyGroup = tradePolicyGroup;
     }
+
 
     @Override
     public String createOrder(SkuRechargeEntity skuRechargeEntity) {
@@ -46,21 +52,16 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
         // 创建聚合订单
         CreateQuotaOrderAggregate createQuotaOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
-        // 保存聚合订单
-        doSaveOrder(createQuotaOrderAggregate);
+        // 5. 交易策略 - 【积分兑换，支付类订单】【返利无支付交易订单，直接充值到账】【订单状态变更交易类型策略】
+        ITradePolicy tradePolicy = tradePolicyGroup.get(skuRechargeEntity.getOrderTradeType().getCode());
+        tradePolicy.trade(createQuotaOrderAggregate);
         // 返回聚合订单的Id
         return createQuotaOrderAggregate.getActivityOrderEntity().getOrderId();
     }
 
 
-
-    protected abstract void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
-
     protected abstract CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity
             , ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity
             , ActivityCountEntity activityCountEntity);
-
-
-
 
 }
