@@ -22,7 +22,6 @@ public class UpdateActivitySkuStockJob {
     public void exec() {
         try {
             // 当在redis中扣除之后，会发送信息到mq，mq会更新数据库库存。
-            log.info("定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】");
             ActivitySkuStockKeyVO activitySkuStockKeyVO = skuStock.takeQueueValue();
             if (null == activitySkuStockKeyVO) return;
             log.info("定时任务，更新活动sku库存 sku:{} activityId:{}", activitySkuStockKeyVO.getSku(), activitySkuStockKeyVO.getActivityId());

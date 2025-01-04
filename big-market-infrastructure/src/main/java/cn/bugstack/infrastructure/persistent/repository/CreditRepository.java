@@ -1,5 +1,6 @@
 package cn.bugstack.infrastructure.persistent.repository;
 
+import cn.bugstack.domain.award.model.valobj.AccountStatusVO;
 import cn.bugstack.domain.credit.model.aggregate.TradeAggregate;
 import cn.bugstack.domain.credit.model.entity.CreditAccountEntity;
 import cn.bugstack.domain.credit.model.entity.CreditOrderEntity;
@@ -16,6 +17,8 @@ import cn.bugstack.infrastructure.persistent.po.UserCreditOrder;
 import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
 import cn.bugstack.types.common.Constants;
+import cn.bugstack.types.enums.ResponseCode;
+import cn.bugstack.types.exception.AppException;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
@@ -24,6 +27,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -63,6 +67,7 @@ public class CreditRepository implements ICreditRepository {
         userCreditAccountReq.setTotalAmount(creditAccountEntity.getAdjustAmount());
         // 知识；仓储往上有业务语义，仓储往下到 dao 操作是没有业务语义的。所以不用在乎这块使用的字段名称，直接用持久化对象即可。
         userCreditAccountReq.setAvailableAmount(creditAccountEntity.getAdjustAmount());
+        userCreditAccountReq.setAccountStatus(AccountStatusVO.open.getCode());
 
         // 积分订单
         UserCreditOrder userCreditOrderReq = new UserCreditOrder();
@@ -92,8 +97,16 @@ public class CreditRepository implements ICreditRepository {
                     if (null == userCreditAccount) {
                         userCreditAccountDao.insert(userCreditAccountReq);
                     } else {
-                        //todo 积分小于0的时候 也会产生订单
-                        userCreditAccountDao.updateAddAmount(userCreditAccountReq);
+                        BigDecimal availableAmount = userCreditAccountReq.getAvailableAmount();
+                        if (availableAmount.compareTo(BigDecimal.ZERO) >= 0) {
+                            userCreditAccountDao.updateAddAmount(userCreditAccountReq);
+                        } else {
+                            int subtractionCount = userCreditAccountDao.updateSubtractionAmount(userCreditAccountReq);
+                            if (1 != subtractionCount) {
+                                status.setRollbackOnly();
+                                throw new AppException(ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getCode(), ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getInfo());
+                            }
+                        }
                     }
                     // 2. 保存账户订单
                     userCreditOrderDao.insert(userCreditOrderReq);

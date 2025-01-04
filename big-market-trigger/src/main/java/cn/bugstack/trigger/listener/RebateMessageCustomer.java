@@ -47,10 +47,6 @@ public class RebateMessageCustomer {
             BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage> eventMessage = JSON.parseObject(message, new TypeReference<BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage>>() {
             }.getType());
             SendRebateMessageEvent.RebateMessage rebateMessage = eventMessage.getData();
-            if (!RebateTypeVO.SKU.getCode().equals(rebateMessage.getRebateType())) {
-                log.info("监听用户行为返利消息 - 非sku奖励暂时不处理 topic: {} message: {}", topic, message);
-                return;
-            }
             // 2. 入账奖励
             switch (rebateMessage.getRebateType()) {
                 case "sku":

@@ -48,7 +48,7 @@ public class RaffleActivityControllerTest {
 
     @Test
     public void test_calendarSignRebate() throws InterruptedException {
-        Response<Boolean> response = raffleActivityService.calendarSignRebate("xiaofuge");
+        Response<Boolean> response = raffleActivityService.calendarSignRebate("tttssss");
         log.info("测试结果：{}", JSON.toJSONString(response));
         new CountDownLatch(1).await();
     }
@@ -96,7 +96,7 @@ public class RaffleActivityControllerTest {
 
     @Test
     public void test_queryUserCreditAccount() {
-        String request = "xiaofuge";
+        String request = "tss";
         Response<BigDecimal> response = raffleActivityService.queryUserCreditAccount(request);
         log.info("请求参数：{}", JSON.toJSONString(request));
         log.info("测试结果：{}", JSON.toJSONString(response));
@@ -105,8 +105,8 @@ public class RaffleActivityControllerTest {
     @Test
     public void test_creditPayExchangeSku() throws InterruptedException {
         SkuProductShopCartRequestDTO request = new SkuProductShopCartRequestDTO();
-        request.setUserId("xiaofuge");
-        request.setSku(9011L);
+        request.setUserId("wt");
+        request.setSku(9014L);
         Response<Boolean> response = raffleActivityService.creditPayExchangeSku(request);
         log.info("请求参数：{}", JSON.toJSONString(request));
         log.info("测试结果：{}", JSON.toJSONString(response));
