@@ -12,7 +12,10 @@ import java.util.Date;
  */
 @Data
 public class RaffleActivitySku {
-
+    /**
+     * 自增ID
+     */
+    private Long id;
     /**
      * 商品sku
      */

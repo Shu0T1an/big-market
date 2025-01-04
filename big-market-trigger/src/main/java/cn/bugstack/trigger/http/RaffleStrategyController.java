@@ -1,6 +1,13 @@
 package cn.bugstack.trigger.http;
 
+import cn.bugstack.domain.activity.model.entity.SkuProductEntity;
+import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.model.entity.UnpaidActivityOrderEntity;
+import cn.bugstack.domain.activity.model.valobj.OrderTradeTypeVO;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
+import cn.bugstack.domain.activity.service.product.RaffleActivitySkuProductService;
+import cn.bugstack.domain.credit.model.entity.CreditAccountEntity;
+import cn.bugstack.domain.credit.service.ICreditAdjustService;
 import cn.bugstack.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.RaffleFactorEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
@@ -16,10 +23,13 @@ import cn.bugstack.types.exception.AppException;
 import cn.bugstack.types.model.Response;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -48,6 +58,10 @@ public class RaffleStrategyController implements IRaffleStrategyService {
     private IRaffleRule raffleRule;
     @Resource
     private IRaffleActivityAccountQuotaService raffleActivityAccountQuotaService;
+    @Resource
+    private RaffleActivitySkuProductService raffleActivitySkuProductService;
+    @Resource
+    private ICreditAdjustService creditAdjustService;
 
     /**
      * 策略装配，将策略信息装配到缓存中
@@ -230,5 +244,4 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                     .build();
         }
     }
-
 }

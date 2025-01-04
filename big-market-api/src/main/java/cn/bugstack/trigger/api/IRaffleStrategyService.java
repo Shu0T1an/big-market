@@ -5,6 +5,7 @@ import cn.bugstack.types.model.Response;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+
 import java.util.List;
 
 /**
@@ -40,4 +41,7 @@ public interface IRaffleStrategyService {
 
     @RequestMapping(value = "query_raffle_strategy_rule_weight", method = RequestMethod.POST)
     Response<List<RaffleStrategyRuleWeightResponseDTO>> queryRaffleStrategyRuleWeight(RaffleStrategyRuleWeightRequestDTO request);
+
+
+
 }
