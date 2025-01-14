@@ -18,19 +18,16 @@ import cn.bugstack.domain.strategy.service.IRaffleStrategy;
 import cn.bugstack.domain.strategy.service.armory.IStrategyArmory;
 import cn.bugstack.trigger.api.IRaffleStrategyService;
 import cn.bugstack.trigger.api.dto.*;
+import cn.bugstack.trigger.api.response.Response;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
-import cn.bugstack.types.model.Response;
+
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import javax.annotation.Resource;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

@@ -1,5 +1,5 @@
 server:
-  port: 8092
+  port: 8093
   tomcat:
     threads:
       max: 200        # 设定处理客户请求的线程的最大数目，决定了服务器可以同时响应客户请求的数,默认200
@@ -130,6 +130,16 @@ dubbo:
     port: -1
   scan:
     base-packages: cn.bugstack.trigger.api
+
+zookeeper:
+  sdk:
+    config:
+      connect-string: localhost:2181
+      base-sleep-time-ms: 1000
+      max-retries: 3
+      session-timeout-ms: 18000
+      connection-timeout-ms: 30000
+
 
 
 # 日志

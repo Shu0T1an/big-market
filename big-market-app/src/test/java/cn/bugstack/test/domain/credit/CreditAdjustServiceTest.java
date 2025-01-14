@@ -5,7 +5,8 @@ import cn.bugstack.domain.credit.model.valobj.TradeNameVO;
 import cn.bugstack.domain.credit.model.valobj.TradeTypeVO;
 import cn.bugstack.domain.credit.service.ICreditAdjustService;
 import cn.bugstack.trigger.api.IRaffleActivityService;
-import cn.bugstack.types.model.Response;
+
+import cn.bugstack.trigger.api.response.Response;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
