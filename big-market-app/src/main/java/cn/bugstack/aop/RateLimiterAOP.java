@@ -69,6 +69,7 @@ public class RateLimiterAOP {
         if (null == rateLimiter) {
             rateLimiter = RateLimiter.create(rateLimiterAccessInterceptor.permitsPerSecond());
             loginRecord.put(keyAttr, rateLimiter);
+            // 创建限流工具 ，时间由注解上的permitsPerSecond提供
         }
 
         // 限流拦截
@@ -91,10 +92,25 @@ public class RateLimiterAOP {
     /**
      * 调用用户配置的回调方法，当拦截后，返回回调结果。
      */
+    /**
+     * 执行回退方法以获取回退结果
+     * 本方法用于在目标方法执行异常时，调用指定的回退方法获取替代结果
+     *
+     * @param jp 切入点对象，包含目标方法执行的相关信息
+     * @param fallbackMethod 回退方法的名称
+     * @return 回退方法的执行结果
+     * @throws NoSuchMethodException 如果找不到指定的回退方法
+     * @throws InvocationTargetException 如果回退方法执行过程中抛出异常
+     * @throws IllegalAccessException 如果没有权限执行回退方法
+     */
     private Object fallbackMethodResult(JoinPoint jp, String fallbackMethod) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        // 获取目标方法的签名
         Signature sig = jp.getSignature();
+        // 将签名转换为方法签名，以便获取方法参数类型等信息
         MethodSignature methodSignature = (MethodSignature) sig;
+        // 通过反射获取回退方法对象
         Method method = jp.getTarget().getClass().getMethod(fallbackMethod, methodSignature.getParameterTypes());
+        // 调用回退方法并返回结果
         return method.invoke(jp.getThis(), jp.getArgs());
     }
 

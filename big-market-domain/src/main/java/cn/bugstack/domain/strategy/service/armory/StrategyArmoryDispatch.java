@@ -26,14 +26,17 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
     public boolean assembleLotteryStrategy(Long strategyId) {
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
 
-        // 2 缓存奖品库存【用于decr扣减库存使用】
+        //  缓存奖品库存【用于decr扣减库存使用】
         for (StrategyAwardEntity strategyAward : strategyAwardEntities) {
             Integer awardId = strategyAward.getAwardId();
             Integer awardCount = strategyAward.getAwardCount();
             cacheStrategyAwardCount(strategyId, awardId, awardCount);
         }
+
+        // 装配策略（根据策略Id和奖品列表）
         assembleLotteryStrategy(String.valueOf(strategyId),strategyAwardEntities);
 
+        // 查询策略实体-> 查询规则实体-> 查询规则权重 -> 若没有直接返回，不进行下面规则装配
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
         String ruleWeight = strategyEntity.getRuleWeight();
         if(null == ruleWeight) return true;
@@ -43,9 +46,11 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
             throw new AppException(ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getCode(), ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getInfo());
         }
 
+        // 根据规则实体查询，权重数
         Map<String, List<Integer>> ruleWeightValueMap = strategyRuleEntity.getRuleWeightValues();
         Set<String> keys = ruleWeightValueMap.keySet();
         for (String key : keys) {
+            // 将big_market_strategy_rate_range_key_100006_1000:104,105放到Redis中
             List<Integer> ruleWeightValues = ruleWeightValueMap.get(key);
             ArrayList<StrategyAwardEntity> strategyAwardEntitiesClone = new ArrayList<>(strategyAwardEntities);
             strategyAwardEntitiesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getAwardId()));
