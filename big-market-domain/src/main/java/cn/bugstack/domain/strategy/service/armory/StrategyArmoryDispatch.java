@@ -63,44 +63,59 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
 
     @Override
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
-        // 查询策略配置
-//        log.info("查询策略完毕");
-        // 获取最小的概率
+// 1. 获取最小概率值
         BigDecimal minAwardRate = strategyAwardEntities.stream()
                 .map(StrategyAwardEntity::getAwardRate)
                 .min(BigDecimal::compareTo)
                 .orElse(BigDecimal.ZERO);
-//        log.info("最小的概率为：{}", minAwardRate);
-        //获取概率值的总和
-        BigDecimal totalAwardRate = strategyAwardEntities.stream()
-                .map(StrategyAwardEntity::getAwardRate)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
-//        log.info("概率值的总和：{}", totalAwardRate);
-        // 获取概率范围  =  概率总和/最小概率
-        BigDecimal rateRange = totalAwardRate.divide(minAwardRate,0, RoundingMode.CEILING);
-//        log.info("概率范围为：{}", rateRange);
-        // 生成概率表
-        ArrayList<Integer> strategyAwardSearchRateTables = new ArrayList<>(rateRange.intValue());
-        for(StrategyAwardEntity strategyAward: strategyAwardEntities){
-            Integer awardId = strategyAward.getAwardId(); // 奖品ID
-            BigDecimal awardRate = strategyAward.getAwardRate(); // 奖品概率
-            // 为每一个奖品生成对应数量的概率区间 等于 奖品概率 * 概率范围 ，次数为计算出的概率区间数量。
-            for(int i = 0; i < rateRange.multiply(awardRate).setScale(0, RoundingMode.CEILING).intValue();i++){
+
+        // 2. 循环计算找到概率范围值
+        BigDecimal rateRange = BigDecimal.valueOf(convert(minAwardRate.doubleValue()));
+
+        // 3. 生成策略奖品概率查找表「这里指需要在list集合中，存放上对应的奖品占位即可，占位越多等于概率越高」
+        List<Integer> strategyAwardSearchRateTables = new ArrayList<>(rateRange.intValue());
+        for (StrategyAwardEntity strategyAward : strategyAwardEntities) {
+            Integer awardId = strategyAward.getAwardId();
+            BigDecimal awardRate = strategyAward.getAwardRate();
+            // 计算出每个概率值需要存放到查找表的数量，循环填充
+            for (int i = 0; i < rateRange.multiply(awardRate).intValue(); i++) {
                 strategyAwardSearchRateTables.add(awardId);
             }
         }
-        // 打乱集合
+
+        // 4. 对存储的奖品进行乱序操作
         Collections.shuffle(strategyAwardSearchRateTables);
-//        log.info("打乱集合");
-        // 存储到Map中
+
+        // 5. 生成出Map集合，key值，对应的就是后续的概率值。通过概率来获得对应的奖品ID
         Map<Integer, Integer> shuffleStrategyAwardSearchRateTable = new LinkedHashMap<>();
         for (int i = 0; i < strategyAwardSearchRateTables.size(); i++) {
             shuffleStrategyAwardSearchRateTable.put(i, strategyAwardSearchRateTables.get(i));
         }
 
-        // 存储到Redis中 持久化
-        repository.storeStrategyAwardSearchRateTable(key,shuffleStrategyAwardSearchRateTable.size(),shuffleStrategyAwardSearchRateTable);
-//        log.info("已经持久化");
+        // 6. 存放到 Redis
+        repository.storeStrategyAwardSearchRateTable(key, shuffleStrategyAwardSearchRateTable.size(), shuffleStrategyAwardSearchRateTable);
+    }
+
+    private double convert(double min) {
+        if (0 == min) return 1D;
+
+        String minStr = String.valueOf(min);
+
+        // 小数点前
+        String beginVale = minStr.substring(0, minStr.indexOf("."));
+        int beginLength = 0;
+        if (Double.parseDouble(beginVale) > 0) {
+            beginLength = minStr.substring(0, minStr.indexOf(".")).length();
+        }
+
+        // 小数点后
+        String endValue = minStr.substring(minStr.indexOf(".") + 1);
+        int endLength = 0;
+        if (Double.parseDouble(endValue) > 0) {
+            endLength = minStr.substring(minStr.indexOf(".") + 1).length();
+        }
+
+        return Math.pow(10, beginLength + endLength);
     }
 
     @Override

@@ -24,7 +24,7 @@ public class ActivityArmory implements IActivityArmory, IActivityDispatch {
 
     @Override
     public boolean assembleActivitySku(Long sku) {
-        // 预热活动sku库存
+        // 预热活动sku库存 查询数据库
         ActivitySkuEntity activitySkuEntity = activityRepository.queryActivitySku(sku);
         cacheActivitySkuStockCount(sku, activitySkuEntity.getStockCountSurplus());
 

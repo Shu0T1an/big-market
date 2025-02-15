@@ -40,7 +40,6 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         while (nextNode != null) {
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
             String ruleValue = ruleTreeNode.getRuleValue();
-
             // 通过一个树后获得一个逻辑实体，里面有是否放行的标识，还有策略奖品实体
             DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId,ruleValue,endDateTime);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
